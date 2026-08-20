@@ -20,7 +20,7 @@ public class DataGenerators {
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
-        // i18n
         generator.addProvider(event.includeClient(), new WANCablesLanguageProvider(output));
+        generator.addProvider(event.includeServer(), new WANCablesRecipeProvider(output, lookupProvider));
     }
 }

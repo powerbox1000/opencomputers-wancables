@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "opencomputers:datacard1"
+    },
+    "I": {
+      "item": "minecraft:iron_nugget"
+    },
+    "M": {
+      "item": "opencomputers:chip1"
+    },
+    "R": {
+      "item": "opencomputers:ram1"
+    },
+    "T": {
+      "item": "opencomputers:transistor"
+    }
+  },
+  "pattern": [
+    "ITI",
+    "DMR",
+    "ITI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "wancables:modem"
+  }
+}
