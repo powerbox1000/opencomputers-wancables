@@ -13,7 +13,6 @@ import net.neoforged.neoforge.data.event.GatherDataEvent;
 @EventBusSubscriber
 public class DataGenerators {
     @SubscribeEvent
-    @SuppressWarnings("unused")
     public static void gatherData(GatherDataEvent event) {
         DataGenerator generator = event.getGenerator();
         PackOutput output = generator.getPackOutput();
@@ -22,5 +21,7 @@ public class DataGenerators {
 
         generator.addProvider(event.includeClient(), new WANCablesLanguageProvider(output));
         generator.addProvider(event.includeServer(), new WANCablesRecipeProvider(output, lookupProvider));
+        generator.addProvider(event.includeServer(), new WANCablesBlockTagProvider(output, lookupProvider, existingFileHelper));
+        generator.addProvider(event.includeServer(), new WANCablesLootTableProvider(output, lookupProvider));
     }
 }

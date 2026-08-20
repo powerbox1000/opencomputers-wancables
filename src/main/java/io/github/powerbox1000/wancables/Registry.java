@@ -35,7 +35,7 @@ public class Registry {
     public static final DeferredBlockItemPairHolder<CableBlock> CABLE_BLOCK = registerBlockItemPair("cable", () -> new CableBlock(
         BlockBehaviour.Properties.of()
             .requiresCorrectToolForDrops()
-            .strength(5.0F, 6.0F)
+            .strength(2.0F, 6.0F)
             .mapColor(MapColor.METAL)
             .sound(SoundType.METAL)
             .noOcclusion()
@@ -45,7 +45,7 @@ public class Registry {
     public static final DeferredBlockItemPairHolder<ModemBlock> MODEM_BLOCK = registerBlockItemPair("modem", () -> new ModemBlock(
         BlockBehaviour.Properties.of()
             .requiresCorrectToolForDrops()
-            .strength(5.0F, 6.0F)
+            .strength(3.0F, 6.0F)
             .mapColor(MapColor.METAL)
             .sound(SoundType.METAL)
             .pushReaction(PushReaction.BLOCK)
