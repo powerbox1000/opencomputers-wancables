@@ -1,0 +1,12 @@
+{
+    "required": true,
+    "minVersion": "0.8",
+    "package": "io.github.powerbox1000.wancables.mixin",
+    "compatibilityLevel": "JAVA_21",
+    "mixins": [
+        "LevelMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}

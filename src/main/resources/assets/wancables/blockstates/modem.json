@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "wancables:block/modem"
+        },
+        "facing=east": {
+            "model": "wancables:block/modem",
+            "y": 90
+        },
+        "facing=south": {
+            "model": "wancables:block/modem",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "wancables:block/modem",
+            "y": 270
+        }
+    }
+}

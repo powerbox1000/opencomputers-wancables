@@ -1,0 +1,11 @@
+{
+  "block.wancables.cable": "WAN Cable",
+  "block.wancables.modem": "Modem",
+  "itemGroup.wancables": "WAN Cables",
+  "wancables.configuration.dataTransferRate": "Data Transfer Rate (blocks/tick)",
+  "wancables.configuration.loadChunksOnMessage": "Load Chunks on Message Receipt",
+  "wancables.configuration.maximumTransmissionUnit": "Maximum Transmission Unit (bytes)",
+  "wancables.configuration.section.wancables.common.toml": "WAN Cables Configs",
+  "wancables.configuration.section.wancables.common.toml.title": "WAN Cables Configs",
+  "wancables.configuration.title": "WAN Cables Configs"
+}
