@@ -9,7 +9,7 @@ public class ServerConfig {
         For convenience, 1 MTU occupies 1 block.
         The defaults currently are:
         - Transmission rate: 16 block/tick (1 chunk/tick), or 320 blocks/sec (40 chunk/sec)
-        - Maximum transmission unit: 1,024 bytes (1 kb)
+        - Maximum transmission unit: 8,192 bytes (8 kb)
     */
 
     public static final ModConfigSpec.IntValue DATA_TRANSFER_RATE = BUILDER
@@ -18,7 +18,7 @@ public class ServerConfig {
     
     public static final ModConfigSpec.IntValue MAXIMUM_TRANSMISSION_UNIT = BUILDER
         .comment("The maximum amount of bytes that can be transferred in a single data packet")
-        .defineInRange("maximumTransmissionUnit", 1024, 1, Integer.MAX_VALUE);
+        .defineInRange("maximumTransmissionUnit", 8192, 1, Integer.MAX_VALUE);
 
     // TODO impl
     // public static final ModConfigSpec.BooleanValue LOAD_CHUNKS_ON_MESSAGE = BUILDER
