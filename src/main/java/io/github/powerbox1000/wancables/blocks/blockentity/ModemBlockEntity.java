@@ -108,7 +108,7 @@ public class ModemBlockEntity extends AbstractComponentBlock {
         return new Object[]{ServerConfig.MAXIMUM_TRANSMISSION_UNIT.get()};
     }
 
-    @Callback(doc = "function send(string data): boolean, string | nil -- Add the given data to the transmission queue")
+    @Callback(doc = "function send(string data): boolean, string | nil -- Add the given data to the transmission queue", direct = true)
     public Object[] send(Context ctx, Arguments args) {
         byte[] data = args.checkByteArray(0);
 
